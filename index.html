@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praewa's Birthday Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Praewa!</h1>
+        <img src="Praewa.jpg" alt="Praewa's Birthday" class="birthday-image">
+        <p>Celebrate with us on this special day!</p>
+        <button class="gift-button" onclick="claimGift()">Claim Your Gift</button>
+    </div>
+    <div id="message-box" class="hidden">
+        <div class="message">
+            <p>ขอให้สุขภาพแข็งแรงไม่เจ็บไม่ป่วยเงินทองไหลมาเทมาหวังอะไรขอให้ประสบผลสําเร็จ</p>
+        </div>
+    </div>
+    <script>
+        function claimGift() {
+            document.getElementById('message-box').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
